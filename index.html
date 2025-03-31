@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C&C Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>C&C POMODORO TIMER</h1>
+        <div class="timer-box" id="studyBox">
+            <h2>Study Time</h2>
+            <div class="image-container" id="studyImage"></div>
+            <div class="time-display" id="studyTime">25:00</div>
+            <button onclick="startTimer('study')">Start Study Timer</button>
+            <button onclick="pauseTimer('study')">Pause</button>
+            <label for="studyDuration">Set Study Duration (minutes):</label>
+            <input type="number" id="studyDuration" value="25" min="1" max="60">
+        </div>
+        
+        <div class="timer-box" id="breakBox">
+            <h2>Break Time</h2>
+            <div class="image-container" id="breakImage"></div>
+            <div class="time-display" id="breakTime">05:00</div>
+            <button onclick="startTimer('break')">Start Break Timer</button>
+            <button onclick="pauseTimer('break')">Pause</button>
+            <label for="breakDuration">Set Break Duration (minutes):</label>
+            <input type="number" id="breakDuration" value="5" min="1" max="30">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
